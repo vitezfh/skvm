@@ -14,13 +14,13 @@ every input device can actually be forwarded to the remote host.
 This means keyboards,mouses,joypads,racing wheels and so on, thus
 allowing you to actually remotely play.
 
-apart from the ssh server, ssh-rdp does not require a specific server 
+apart from the ssh server, skvm.sh does not require a specific server 
 running on the remote side, but a set of tools needs to be present 
 remotely and others locally:
 
 Software requirements:
-    * Local and Remote: bash,ffmpeg,openssh,netevent
-    * Local:  inotifywait, taskset
+    * Local and Remote: bash,openssh,netevent
+    * Local: taskset
 
 Special requirements for input forwarding:
     * Local user need to access files under /dev/input,
@@ -36,7 +36,7 @@ Usage:
 
     There are other tunables you can find in the script.
     --------------------------------------------------------------------------
-Use ssh-rdp.sh inputconfig to create or change the input config file
+Use skvm.sh inputconfig to create or change the input config file
 
 -s, --server        Remote host to connect to
 -u, --user          ssh username
@@ -48,6 +48,6 @@ Use ssh-rdp.sh inputconfig to create or change the input config file
 Examples:
 -------------------------------------------------------------------------------
 Peter connecting to jserver, all defaults accepted
-    ssh-rdp.sh --user venkman --server jserver
+    skvm.sh --user venkman --server jserver
 
 I'm open to suggestions to make this software better!
