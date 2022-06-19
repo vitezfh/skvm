@@ -16,7 +16,7 @@ allowing you to actually remotely play.
 
 apart from the ssh server, skvm.sh does not require a specific server 
 running on the remote side, but a set of tools needs to be present 
-remotely and others locally:
+remotely and others locally.
 
 Software requirements:
     * Local and Remote: bash, openssh, netevent
